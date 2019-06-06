@@ -1,0 +1,14 @@
+#logo{
+    height: 600px;
+    width: auto;
+}
+
+
+
+#results{
+    text-align: center;
+    color: red;
+    font-family: perpetua;
+    font-size: 14pt;
+    font-weight: 700;
+}

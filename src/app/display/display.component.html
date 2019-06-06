@@ -1,0 +1,11 @@
+    
+<form [formGroup]='displayForm' (ngSubmit)='submitSearch()'>
+    <select name='searchMenu' formControlName='searchMenu' class='forms' required>
+      <option value=''></option>
+      <option *ngFor="let search of searchValue" value='{{ search.value }}'>{{ search.view }}</option>
+    </select>
+    <input type='text' class="forms" placeholder="Search" formControlName='searchValue' required><br>
+    <button id="btn" type='submit'>Use the Force...</button>
+  </form>
+  
+<p> {{ _result }}</p>
